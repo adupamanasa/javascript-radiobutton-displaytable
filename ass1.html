@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 1</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<style>
+table#tablesales {
+    margin-left:35%; 
+    margin-right:40%;
+    width: 100%;
+    display:none;
+  }
+caption {
+    background-color:grey;
+    color:black;
+    text-align:center;
+    
+}
+#header {
+    background-color:black;
+    color:white;
+    text-align:left;
+    padding:5px;
+}
+#header img {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-left:30%;
+}
+
+#header h1 {
+    position: relative;
+    top: 18px;
+    left: 0px;
+}
+#footer {
+    background-color:grey;
+    color:black;
+    clear:both;
+    text-align:center;
+    padding:0px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:370px;
+    width:200px;
+    float:left;
+    padding:7px;
+
+}
+html {
+    font: 150%/1.3 arial,sans-serif;
+    padding:1em;
+    background:#B9C2CC;
+}
+th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    height:30%; 
+    width: 30%;
+}
+td 
+{
+    text-align:center; 
+    vertical-align:middle;
+}
+</style>
+
+<div id="header">
+     <img src="ass1.jpg"><h1>United Auto Sales</h1>
+</div>
+
+
+<div id="nav">
+     <input type="radio" name="data" onclick="hideTables();myFunction()" id="hidetab"> Display Sales <br>
+     <input type="radio" name="data" onclick="showTables()" id="showtab"/> Hide Sales
+</div>
+
+     <table cellpadding="0" cellspacing="0" id="tablesales"><br><br>
+     <caption>Total Sales By Year</caption>
+     </table><br>
+
+<div id="footer">
+     <p> © 2014 United Auto Sales </p>
+</div>
+
+      <script src="ass1.js"></script>
+</body>
+</html>
